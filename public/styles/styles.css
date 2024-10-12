@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    /* height: 100vh;  check krna iska badmai*/
+}
+
+#logoDiv {
+    /* background-color: black; */
+    width: fit-content;
+    border-radius: 50%;
+    height: 70px;
+    margin-left: 5%;
+    border: 1px solid white;
+}
+
+.nav-link {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.titleDiv {
+    margin-top: 3px;
+}
+
+.navTitle {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.navbarLogo {
+    height: 60px;
+    margin-top: 3px;
+}
+
+.navbar .navbar-nav {
+    margin-right: 5%;
+}
+
+.mainHeading{
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff !important;
+}
+
+input, textarea {
+    text-align: center;
+}
+
+.form123 {
+    width: 80%;
+    margin-left: 10%;
+}
+
+ul {
+    list-style: none;
+}
+
+#page1 {
+    height: 100vh;
+    background-image: url('/images/f4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 50px 0;
+}
+
+#page2 {
+    height: 70vh;
+}
+#page3 {
+    height: 70vh;
+}
+
+.centered-paragraphs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.centered-paragraphs p {
+    width: 100%;
+}
+
+.custom-accordion-button {
+    background-color: white !important;
+    color: #212529 !important;
+}
+
+.custom-accordion-button:not(.collapsed) {
+    color: #0c63e4 !important;
+}
+
+.custom-accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.custom-accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-button, .accordion-body {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.footer * {
+    color: white;
+}
+
+.fa-leetcode {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png') no-repeat center;
+    background-size: contain;
+}
+
+nav .container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+    #navbarsExample11 {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navTitle {
+        font-size: 30px;
+    }
+    .navbarLogo {
+        height: 40px;
+    }
+    #logoDiv {
+        height: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .navTitle {
+        font-size: 24px;
+    }
+
+    .navbarLogo {
+        height: 40px;
+    }
+
+    #logoDiv {
+        height: 50px;
+    }
+}

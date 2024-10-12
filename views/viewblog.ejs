@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="text-center" data-scroll>
+        <h1 class="py-5 display-4 fw-bold text-body-emphasis mainHeading">View Your Blogs</h1>
+    </div>
+
+    <% if(blogs.length> 0) { %>
+
+        <% blogs.forEach( (blog, index)=> { %>
+            <div class="px-3 py-5 border-bottom" data-scroll style="background-color: black; margin-bottom: 20px;">
+
+                <div class="container">
+                    <h2 class="d-flex flex-wrap align-items-center justify-content-center" style="color: white;">
+                        <%= blog.title %>
+                    </h2>
+                    <p class="text-center lead mb-4" style="color: white;">
+                        <%= blog.content %>
+                    </p>
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button class="btn btn-primary btn-md px-5 mx-3" style="color: black;"
+                            onclick="window.location.href='/editblog/<%= index %>'">Edit</button>
+                        <form action="/delete/<%= index %>" method="POST" style="display: inline;"
+                            onsubmit="return confirm('Are You Sure You Want To Delete This Blog?')">
+                            <button class="btn btn-outline-secondary btn-md mx-3 px-5" type="submit"
+                                style="background-color: white;">Delete</input>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <% } ) %>
+
+    <% } else {%>
+
+        <div class="text-center" data-scroll>
+            <p class="lead mb-4 border-bottom" style="height: 40vh;">No Blogs Available. Please <a href="/writeblog">write a blog</a> first.</p>
+        </div>
+
+    <% } %>
+
+<%- include("partials/footer.ejs") %>

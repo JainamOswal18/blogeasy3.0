@@ -1,0 +1,158 @@
+<%- include("partials/header.ejs") %>
+
+<div
+  id="page1"
+  class="border-bottom d-flex justify-content-center align-items-center"
+  data-scroll
+>
+  <div class="px-4 pt-5 text-center">
+    <h1 class="display-4 fw-bold text-body-emphasis mainHeading">
+      Welcome To Blog Easy
+    </h1>
+    <div class="my-3 pb-3 mx-auto">
+      <p class="lead mb-4">
+        Your Own Personal Space To Write And Upload Your Blogs.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="py-5 border-bottom mb-3">
+  <div class="d-grid gap-1 d-sm-flex justify-content-sm-center">
+    <button
+      type="button"
+      onclick="window.location.href='/writeblog'"
+      class="btn btn-primary btn-md px-4 me-sm-3"
+      fdprocessedid="3goa26"
+    >
+      Get Started
+    </button>
+    <button
+      type="button"
+      onclick="window.location.href='/viewblog'"
+      class="btn btn-outline-secondary btn-md px-4"
+      fdprocessedid="pifia6"
+    >
+      View Blogs
+    </button>
+  </div>
+</div>
+
+<div id="page2" class="border-bottom" data-scroll>
+  <div class="container">
+      <div class="px-4 pt-4">
+        <h1
+          class="display-5 mt-3 text-center fw-bold text-body-emphasis mainHeading"
+        >
+          How Does This Website Work?
+        </h1>
+        <div class="my-3 py-3 centered-paragraphs">
+          <p>
+            1. You Can Write Blogs By Clicking On Write Blog From Navigation Bar
+            or Simply <a href="/writeblog">Click Here!</a>
+          </p>
+          <p>
+            2. Currently You Can Only Add Text Content, But In Later Versions
+            You Could Add Links To Text And Images as well.
+          </p>
+          <p>
+            3. After Submitting Your Blog, You May Choose To Write Another Blog
+            Or Check Your Blog
+          </p>
+          <p>4. You Can Edit Or Delete Your Blog Once Submitted</p>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<div id="page3" class="border-bottom" data-scroll>
+  <div class="container my-5">
+    <h1
+      class="display-5 my-3 py-5 text-center fw-bold text-body-emphasis mainHeading"
+    >
+      Frequently Asked Questions (FAQs)
+    </h1>
+
+    <div class="accordion" id="faqAccordion">
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingOne">
+          <button
+            class="accordion-button collapsed custom-accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqCollapseOne"
+            aria-expanded="true"
+            aria-controls="faqCollapseOne"
+          >
+            What is Bootstrap?
+          </button>
+        </h2>
+        <div
+          id="faqCollapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="faqHeadingOne"
+        >
+          <div class="accordion-body">
+            Bootstrap is a popular front-end framework for building responsive,
+            mobile-first websites quickly and easily.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button
+            class="accordion-button collapsed custom-accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqCollapseTwo"
+            aria-expanded="false"
+            aria-controls="faqCollapseTwo"
+          >
+            How to include Bootstrap in a project?
+          </button>
+        </h2>
+        <div
+          id="faqCollapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="faqHeadingTwo"
+        >
+          <div class="accordion-body">
+            You can include Bootstrap via a CDN or by downloading the files
+            locally. The easiest way is to link the CDN in your project's HTML.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingThree">
+          <button
+            class="accordion-button collapsed custom-accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqCollapseThree"
+            aria-expanded="false"
+            aria-controls="faqCollapseThree"
+          >
+            Is Bootstrap free to use?
+          </button>
+        </h2>
+        <div
+          id="faqCollapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="faqHeadingThree"
+        >
+          <div class="accordion-body">
+            Yes, Bootstrap is open-source and free to use under the MIT License.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer.ejs") %>
