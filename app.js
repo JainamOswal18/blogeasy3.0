@@ -28,7 +28,8 @@
         const blog = blogs[req.params.index];
 
         res.render("editblog.ejs", {
-            blog, id:req.params.index
+            blog,
+            id: req.params.index
         });
     });
 
