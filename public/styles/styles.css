@@ -23,7 +23,7 @@ body {
     border-radius: 50%;
     height: 70px;
     margin-left: 5%;
-    border: 1px solid white;
+    border: 0.5px solid white;
 }
 
 .nav-link {
@@ -34,6 +34,7 @@ body {
 
 .titleDiv {
     margin-top: 3px;
+    width: 50%;
 }
 
 .navTitle {
@@ -45,11 +46,13 @@ body {
 
 .navbarLogo {
     height: 60px;
+    width: 70px;
     margin-top: 3px;
 }
 
 .navbar .navbar-nav {
     margin-right: 5%;
+    /* width: fit-content; */
 }
 
 .mainHeading{
@@ -136,12 +139,15 @@ ul {
 
 nav .container-fluid {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 @media (max-width: 992px) {
     #navbarsExample11 {
         margin-top: 40px;
+    }
+    .navbar .navbar-nav {
+        margin-right: 0;
     }
 }
 
@@ -151,6 +157,7 @@ nav .container-fluid {
     }
     .navbarLogo {
         height: 40px;
+        width: 50px;
     }
     #logoDiv {
         height: 50px;
