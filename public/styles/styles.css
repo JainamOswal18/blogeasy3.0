@@ -26,15 +26,21 @@ body {
     border: 0.5px solid white;
 }
 
-.nav-link {
-    padding: 10px;
+.abc {
+    padding: 8px;
     font-size: 18px;
     text-align: center;
 }
 
 .titleDiv {
     margin-top: 3px;
-    width: 50%;
+    margin-left: 10%;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navTitle {
@@ -148,6 +154,9 @@ nav .container-fluid {
     }
     .navbar .navbar-nav {
         margin-right: 0;
+    }
+    .titleDiv{
+        margin: 0;
     }
 }
 

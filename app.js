@@ -65,6 +65,10 @@
         res.redirect("/viewblog");
     });
 
+    app.get("/login", (req, res) => {
+        res.render("login.ejs");
+    });
+
     app.listen(port, () => {
         console.log(`Server Listening On Port ${port}`);
     });
