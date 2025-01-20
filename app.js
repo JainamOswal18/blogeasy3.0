@@ -53,7 +53,6 @@
         blogs[blogID].title = req.body["blogTitle"];
         blogs[blogID].content = req.body["blogContent"];
         
-
         res.redirect("/viewblog")
     });
 
